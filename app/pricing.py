@@ -9,6 +9,6 @@ def surge_multiplier(now: datetime | None = None) -> float:
     """
     now = now or datetime.now(timezone.utc)
     hour = now.hour
-    if 9 <= hour < 11 or 17 <= hour < 18:
+    if 9 <= hour < 11 or 17 <= hour < 19:
         return 1.25
     return 1.0
